@@ -9,8 +9,23 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        brandRed: "#F53B40",
+        brandYellow: "#F88E04",
+        brandPurple: "#6D4CBD",
+      },
+      fontFamily: {
+        retro: ["var(--font-retro-tech)", "sans-serif"],
+        code: ["var(--font-ibm)", "monospace"],
+        lcd: ["var(--font-lcd)", "monospace"],
+      },
+      animation: {
+        grid: "grid 15s linear infinite",
+      },
+      keyframes: {
+        grid: {
+          "0%": { transform: "translateY(-50%)" },
+          "100%": { transform: "translateY(0)" },
+        },
       },
     },
   },

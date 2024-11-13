@@ -1,15 +1,26 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { RetroGrid } from "@/components/grid";
+import Image from "next/image";
+import Space from "./space.jpg";
+import { IBM_Plex_Mono } from "next/font/google";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
+const ibm = IBM_Plex_Mono({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-ibm",
+});
+
+const retroTech = localFont({
+  src: "./fonts/RETROTECH.ttf",
+  variable: "--font-retro-tech",
   weight: "100 900",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
+
+const lcd = localFont({
+  src: "./fonts/LCD.ttf",
+  variable: "--font-lcd",
   weight: "100 900",
 });
 
@@ -26,9 +37,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${retroTech.variable} ${ibm.variable} ${lcd.variable} antialiased`}
       >
-        {children}
+        <div className="fixed inset-0 z-0">
+          <RetroGrid />{" "}
+          <Image src={Space} alt="space" fill className="opacity-10" />
+        </div>
+        <main className="z-20">{children}</main>
       </body>
     </html>
   );

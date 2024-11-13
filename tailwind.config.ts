@@ -12,6 +12,7 @@ export default {
         brandRed: "#F53B40",
         brandYellow: "#F88E04",
         brandPurple: "#6D4CBD",
+        brandOrange: "#F88E04"
       },
       fontFamily: {
         retro: ["var(--font-retro-tech)", "sans-serif"],
@@ -27,6 +28,9 @@ export default {
           "100%": { transform: "translateY(0)" },
         },
       },
+      fontSize: {
+        'title': '10rem',
+      }
     },
   },
   plugins: [],

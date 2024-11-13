@@ -37,13 +37,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${retroTech.variable} ${ibm.variable} ${lcd.variable} antialiased`}
+        className={`${retroTech.variable} ${ibm.variable} ${lcd.variable} antialiased w-full min-h-screen relative`}
       >
         <div className="fixed inset-0 z-0">
           <RetroGrid />{" "}
           <Image src={Space} alt="space" fill className="opacity-10" />
         </div>
-        <main className="z-20">{children}</main>
+        <main className="relative z-10 w-full">{children}</main>
       </body>
     </html>
   );

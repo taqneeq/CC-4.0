@@ -34,22 +34,8 @@ const faqData: FAQItem[] = [
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.",
   },
 ];
-
-const containerVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.6,
-      ease: "easeOut",
-    },
-  },
-};
-
 const Accordion: React.FC<AccordionProps> = ({
   item,
-  index,
   isExpanded,
   onToggle,
 }) => {
@@ -91,9 +77,6 @@ export default function FAQ() {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
   const titleRef = useRef(null);
   const isTitleInView = useInView(titleRef, { once: true });
-
-  const containerRef = useRef(null);
-  const isContainerInView = useInView(containerRef, { once: true });
 
   return (
     <div className="min-h-screen max-h-[1440px] w-full flex flex-col gap-10 justify-center items-center p-4 md:p-8 relative">

@@ -16,7 +16,7 @@ export default function Pdomains() {
   const isDeepLearningInView = useInView(deepLearningRef, { once: true });
 
   const imageVariants = {
-    hidden: (direction: any) => ({
+    hidden: (direction: any) => ({ /* eslint-disable  @typescript-eslint/no-explicit-any */
       rotate: direction === "left" ? -90 : 90,
       x: direction === "left" ? -100 : 100,
       y: -100,

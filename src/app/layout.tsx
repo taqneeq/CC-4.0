@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { RetroGrid } from "@/components/grid";
+import { RetroGrid } from "@/app/components/grid";
 import Image from "next/image";
 import Space from "./space.jpg";
 import { IBM_Plex_Mono } from "next/font/google";

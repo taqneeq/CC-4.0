@@ -1,4 +1,6 @@
-import Pdomains from "@/screens/pdomains";
+import Pdomains from "@/app/screens/pdomains";
+import Sponsors from "@/app/screens/sponsors";
+import FAQ from "@/app/screens/faq";
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
         <img src="/sparkle.svg" alt="sparkle" className="w-1/2 h-1/2" />
       </section>
       <Pdomains />
+      <Sponsors />
+      <FAQ />
     </div>
   );
 }

@@ -1,4 +1,6 @@
-import Pdomains from "@/screens/pdomains";
+import Pdomains from "@/app/screens/pdomains";
+import Sponsors from "@/app/screens/sponsors";
+import FAQ from "@/app/screens/faq";
 
 export default function Home() {
   return (
@@ -21,6 +23,8 @@ export default function Home() {
         
       </section>
       <Pdomains />
+      <Sponsors />
+      <FAQ />
     </div>
   );
 }

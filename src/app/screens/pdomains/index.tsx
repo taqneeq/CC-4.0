@@ -16,7 +16,8 @@ export default function Pdomains() {
   const isDeepLearningInView = useInView(deepLearningRef, { once: true });
 
   const imageVariants = {
-    hidden: (direction: any) => ({ /* eslint-disable  @typescript-eslint/no-explicit-any */
+    hidden: (direction: any) => ({
+      /* eslint-disable  @typescript-eslint/no-explicit-any */
       rotate: direction === "left" ? -90 : 90,
       x: direction === "left" ? -100 : 100,
       y: -100,
@@ -37,7 +38,10 @@ export default function Pdomains() {
   };
 
   return (
-    <section className="min-h-screen max-h-[1440px]  w-full flex flex-col justify-center items-center p-8 gap-10 relative">
+    <section
+      className="min-h-screen max-h-[1440px]  w-full flex flex-col justify-center items-center p-8 gap-10 relative"
+      id="history"
+    >
       <Image
         src="/sparkle.svg"
         alt="sparkle"

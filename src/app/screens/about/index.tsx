@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section className="min-h-screen  w-full flex-col items-center text-center justify-around md:ml-auto p-8 space-y-20 relative max-w-7xl mx-auto">
+    <section className="min-h-screen  w-full flex-col items-center text-center justify-around md:ml-auto p-8 space-y-20 relative max-w-7xl mx-auto" id="about">
       <div className="flex flex-col items-start justify-start gap-4 md:gap-2 lg:gap-4 w-full text-left">
         <h1 className="text-5xl md:text-8xl font-retro font-bold mb-8 drop-shadow-[5px_5px_0_rgba(245,59,64,1)]">
           What is Cyber Cypher?

@@ -79,7 +79,10 @@ export default function FAQ() {
   const isTitleInView = useInView(titleRef, { once: true });
 
   return (
-    <div className="min-h-screen max-h-[1440px] w-full flex flex-col gap-10 justify-center items-center p-4 md:p-8 relative">
+    <div
+      className="min-h-screen max-h-[1440px] w-full flex flex-col gap-10 justify-center items-center p-4 md:p-8 relative"
+      id="faq"
+    >
       <Image
         src="/sparkle.svg"
         alt="sparkle"
@@ -116,7 +119,6 @@ export default function FAQ() {
         animate={isTitleInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.9, ease: [0.17, 0.55, 0.55, 1], delay: 1.5 }}
       >
-
         <div className="space-y-4 pt-24 max-w-2xl mx-auto">
           {faqData.map((item, index) => (
             <Accordion
@@ -138,7 +140,6 @@ export default function FAQ() {
         animate={isTitleInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.9, ease: [0.17, 0.55, 0.55, 1], delay: 1.5 }}
       >
-
         <div className="space-y-4 md:pt-24 max-w-2xl mx-auto">
           {faqData.map((item, index) => (
             <Accordion

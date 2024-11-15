@@ -19,7 +19,7 @@ interface AccordionProps {
 
 const faqData: FAQItem[] = [
   {
-    question: "What Is CC? Why Should I Join",
+    question: "What Is CC? Why Should I Join?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
   },
@@ -47,7 +47,7 @@ const Accordion: React.FC<AccordionProps> = ({
         whileHover={{ scale: 1.01 }}
         whileTap={{ scale: 0.99 }}
       >
-        <h3 className="text-xl md:text-2xl font-retro text-white">
+        <h3 className="text-xl md:text-2xl font-retro text-white underline">
           {item.question}
         </h3>
         <motion.div
@@ -105,7 +105,7 @@ export default function FAQ() {
         </h1>
       </motion.div>
       <motion.div
-        className="relative w-full m-6 p-5 md:p-10 min-h-86 bg-contain  bg-no-repeat mx-auto"
+        className="hidden md:block relative w-full m-6 p-5 md:p-10 min-h-86  bg-contain  bg-no-repeat mx-auto"
         style={{
           backgroundImage: "url(" + Card.src + ")",
           backgroundRepeat: "no-repeat",
@@ -116,7 +116,30 @@ export default function FAQ() {
         animate={isTitleInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.9, ease: [0.17, 0.55, 0.55, 1], delay: 1.5 }}
       >
+
         <div className="space-y-4 pt-24 max-w-2xl mx-auto">
+          {faqData.map((item, index) => (
+            <Accordion
+              key={index}
+              item={item}
+              index={index}
+              isExpanded={expandedIndex === index}
+              onToggle={() =>
+                setExpandedIndex(expandedIndex === index ? null : index)
+              }
+            />
+          ))}
+        </div>
+      </motion.div>
+
+      <motion.div
+        className="md:hidden relative w-full m-6 p-5 md:p-10 h-full mx-auto bg-[#4D4D4D] backdrop-filter backdrop-blur-sm bg-opacity-10 border border-purple-800/30 "
+        initial={{ opacity: 0, y: 20 }}
+        animate={isTitleInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.9, ease: [0.17, 0.55, 0.55, 1], delay: 1.5 }}
+      >
+
+        <div className="space-y-4 md:pt-24 max-w-2xl mx-auto">
           {faqData.map((item, index) => (
             <Accordion
               key={index}

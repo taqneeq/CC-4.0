@@ -39,7 +39,7 @@ export default function Pdomains() {
 
   return (
     <section
-      className="min-h-screen max-h-[1440px]  w-full flex flex-col justify-center items-center p-8 gap-10 relative"
+      className="min-h-screen max-h-[720px] overflow-clip  w-full flex flex-col justify-center items-center p-8 gap-10 relative"
       id="history"
     >
       <Image
@@ -67,7 +67,7 @@ export default function Pdomains() {
         </h1>
       </motion.div>
 
-      <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-4 justify-items-center">
+      <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-4 justify-items-center max-w-7xl mx-auto">
         <motion.div
           className="md:w-[70%]"
           ref={healthcareRef}

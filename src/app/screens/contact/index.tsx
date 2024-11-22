@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { useInView } from "framer-motion";
 import Image from "next/image";
 import { PhoneCall } from "lucide-react";
+import { col } from "framer-motion/client";
 
 export default function Contact() {
   const titleRef = useRef(null);
@@ -39,9 +40,30 @@ export default function Contact() {
 
   // Contact numbers
   const contacts = [
-    { number: "+91 99679 72473", link: "tel:+919967972473" },
-    { number: "+91 73036 11722", link: "tel:+917303611722" },
-    { number: "+91 88509 69672", link: "tel:+918850969672" },
+    {
+      number: "+91 99679 72473",
+      link: "tel:+919967972473",
+      name: "Rushabh Chhajed",
+      colour: "drop-shadow-[1px_1px_0_rgba(255,150,128,1)]",
+      walink:
+        "https://api.whatsapp.com/send?phone=919967972473&text=Hi%20there%2C%20I%20had%20some%20queries%20about%20Cyber%20Cypher!",
+    },
+    {
+      number: "+91 73036 11722",
+      link: "tel:+917303611722",
+      name: "Anushka Saxena",
+      colour: "drop-shadow-[1px_1px_0_rgba(222,82,70,1)]",
+      walink:
+        "https://api.whatsapp.com/send?phone=917303611722&text=Hi%20there%2C%20I%20had%20some%20queries%20about%20Cyber%20Cypher!",
+    },
+    {
+      number: "+91 88509 69672",
+      link: "tel:+918850969672",
+      name: "Siddhi Gandhi",
+      colour: "drop-shadow-[1px_1px_0_rgba(255,198,93,1)]",
+      walink:
+        "https://api.whatsapp.com/send?phone=918850969672&text=Hi%20there%2C%20I%20had%20some%20queries%20about%20Cyber%20Cypher!",
+    },
   ];
 
   return (
@@ -81,19 +103,22 @@ export default function Contact() {
         animate={isCardsInView ? "visible" : "hidden"}
       >
         {contacts.map((contact, index) => (
-          <motion.div
+          <motion.a
             key={index}
-            className="relative w-full h-80 bg-black bg-opacity-70 rounded-lg flex flex-col items-center justify-center gap-4 text-white text-center p-6 shadow-lg"
+            className="relative w-full h-60 bg-[#4D4D4D] backdrop-filter backdrop-blur-sm bg-opacity-10 border border-cyan-800/60  flex flex-col items-center justify-center gap-4 text-white text-center p-6 shadow-lg hover:bg-red-800 transition-colors duration-300 ease-in-out"
             variants={cardVariants}
+            href={contact.walink}
           >
-            <PhoneCall className="w-14 h-14 text-orange-500" />
+            <p className={`text-4xl font-retro ${contact.colour}`}>
+              {contact.name}
+            </p>
             <a
               href={contact.link}
               className="text-lg font-bold hover:underline"
             >
               {contact.number}
             </a>
-          </motion.div>
+          </motion.a>
         ))}
       </motion.div>
     </section>

@@ -3,8 +3,6 @@ import { motion } from "framer-motion";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 import Image from "next/image";
-import { PhoneCall } from "lucide-react";
-import { col } from "framer-motion/client";
 
 export default function Contact() {
   const titleRef = useRef(null);

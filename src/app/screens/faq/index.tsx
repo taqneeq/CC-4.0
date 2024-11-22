@@ -62,7 +62,7 @@ const Accordion: React.FC<AccordionProps> = ({
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.3 }}  
+            transition={{ duration: 0.3 }}
             className="overflow-hidden"
           >
             <div className="p-4 text-white/80 font-code">{item.answer}</div>
@@ -101,7 +101,7 @@ export default function FAQ() {
         ref={titleRef}
         initial={{ opacity: 0, y: 20 }}
         animate={isTitleInView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.9, ease: [0.17, 0.55, 0.55, 1], delay: 0.5 }}
+        transition={{ duration: 0.3, ease: [0.17, 0.55, 0.55, 1]}}
       >
         <h1 className="text-center text-5xl md:text-8xl font-retro font-bold mb-8 drop-shadow-[5px_5px_0_rgba(245,59,64,1)]">
           FAQ
@@ -117,7 +117,7 @@ export default function FAQ() {
         }}
         initial={{ opacity: 0, y: 20 }}
         animate={isTitleInView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.9, ease: [0.17, 0.55, 0.55, 1], delay: 1.5 }}
+        transition={{ duration: 0.3, ease: [0.17, 0.55, 0.55, 1], delay: 0.2 }}
       >
         <div className="space-y-4 pt-24 max-w-2xl mx-auto">
           {faqData.map((item, index) => (
@@ -138,7 +138,7 @@ export default function FAQ() {
         className="md:hidden relative w-full m-6 p-5 md:p-10 h-full mx-auto bg-[#4D4D4D] backdrop-filter backdrop-blur-sm bg-opacity-10 border border-purple-800/30 "
         initial={{ opacity: 0, y: 20 }}
         animate={isTitleInView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.9, ease: [0.17, 0.55, 0.55, 1], delay: 1.5 }}
+        transition={{ duration: 0.3, ease: [0.17, 0.55, 0.55, 1], delay: 0.2 }}
       >
         <div className="space-y-4 md:pt-24 max-w-2xl mx-auto">
           {faqData.map((item, index) => (

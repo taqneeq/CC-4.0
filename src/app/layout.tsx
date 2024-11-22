@@ -41,10 +41,10 @@ export default function RootLayout({
       <body
         className={`${retroTech.variable} ${ibm.variable} ${lcd.variable} antialiased w-full min-h-screen relative`}
       >
-        <Navbar />  
+        <Navbar />
         <div className="fixed inset-0 z-0">
+          <Image src={Space} alt="space" fill className="opacity-10" />{" "}
           <RetroGrid />{" "}
-          <Image src={Space} alt="space" fill className="opacity-10" />
         </div>
         <main className="relative z-10 w-full">{children}</main>
       </body>

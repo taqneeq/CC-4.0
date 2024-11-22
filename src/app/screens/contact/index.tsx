@@ -47,6 +47,7 @@ export default function Contact() {
       colour: "drop-shadow-[1px_1px_0_rgba(255,150,128,1)]",
       walink:
         "https://api.whatsapp.com/send?phone=919967972473&text=Hi%20there%2C%20I%20had%20some%20queries%20about%20Cyber%20Cypher!",
+      hover: "bg-red-800",
     },
     {
       number: "+91 73036 11722",
@@ -55,6 +56,7 @@ export default function Contact() {
       colour: "drop-shadow-[1px_1px_0_rgba(222,82,70,1)]",
       walink:
         "https://api.whatsapp.com/send?phone=917303611722&text=Hi%20there%2C%20I%20had%20some%20queries%20about%20Cyber%20Cypher!",
+      hover: "bg-pink-800",
     },
     {
       number: "+91 88509 69672",
@@ -63,6 +65,7 @@ export default function Contact() {
       colour: "drop-shadow-[1px_1px_0_rgba(255,198,93,1)]",
       walink:
         "https://api.whatsapp.com/send?phone=918850969672&text=Hi%20there%2C%20I%20had%20some%20queries%20about%20Cyber%20Cypher!",
+      hover: "bg-cyan-800",
     },
   ];
 
@@ -105,7 +108,7 @@ export default function Contact() {
         {contacts.map((contact, index) => (
           <motion.a
             key={index}
-            className="relative w-full h-60 bg-[#4D4D4D] backdrop-filter backdrop-blur-sm bg-opacity-10 border border-cyan-800/60  flex flex-col items-center justify-center gap-4 text-white text-center p-6 shadow-lg hover:bg-red-800 transition-colors duration-300 ease-in-out"
+            className={`relative w-full h-60 bg-[#4D4D4D] backdrop-filter backdrop-blur-sm bg-opacity-10 border border-cyan-800/60  flex flex-col items-center justify-center gap-4 text-white text-center p-6 shadow-lg hover:bg-red-800 transition-colors duration-300 ease-in-out`}
             variants={cardVariants}
             href={contact.walink}
           >

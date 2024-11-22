@@ -28,7 +28,7 @@ export default function About() {
           What is Cyber Cypher?
         </h1>
         <p
-          className="text-xl font-code max-w-prose md:text-justify"
+          className="md:text-xl font-code max-w-prose md:text-justify"
           style={{
             opacity: isInView ? 1 : 0,
             transform: isInView ? "translateY(0)" : "translateY(50px)",
@@ -61,7 +61,7 @@ export default function About() {
           Organizers
         </h1>
         <p
-          className="text-xl font-code max-w-prose md:text-justify md:[text-align-last:right]"
+          className="md:text-xl font-code max-w-prose md:text-justify md:[text-align-last:right]"
           style={{
             opacity: isInView2 ? 1 : 0,
             transform: isInView2 ? "translateY(0)" : "translateY(50px)",

@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav className="bg-gray-300 backdrop-filter backdrop-blur-sm bg-opacity-10 text-white py-4 fixed top-5 w-fit z-[99999] left-1/2 -translate-x-1/2">
       <div className=" mx-auto px-4 flex justify-between items-center">
-        <div className="space-x-1 font-retro font-bold text-xs md:text-lg space-x-4">
+        <div className="font-retro font-bold text-xs md:text-lg space-x-4">
           <a href="#about" className="hover:text-white hover:underline py-2">
             About
           </a>

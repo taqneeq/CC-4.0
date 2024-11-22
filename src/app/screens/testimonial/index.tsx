@@ -36,7 +36,7 @@ export default function Testimonial() {
             find their own niche and learn a lot.
           </blockquote>
           <cite className="not-italic font-bold block font-code">
-            - Aanchal
+            - Aanchal Shah
           </cite>
         </div>
 
@@ -55,7 +55,9 @@ export default function Testimonial() {
             experience. I would definitely recommend it to anyone who wants to
             get started with hackathons.
           </blockquote>
-          <cite className="not-italic font-bold block font-code">- Naitik</cite>
+          <cite className="not-italic font-bold block font-code">
+            - Naitik Lodha
+          </cite>
         </div>
 
         <div
@@ -75,7 +77,9 @@ export default function Testimonial() {
             Cyber Cypher was the place where i learnt the most about web
             development. It was a great experience
           </blockquote>
-          <cite className="not-italic font-bold block font-code">- Mysha</cite>
+          <cite className="not-italic font-bold block font-code">
+            - Mysha Bhartiya
+          </cite>
         </div>
       </div>
     </section>

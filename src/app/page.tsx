@@ -5,7 +5,6 @@ import Pdomains from "@/app/screens/pdomains";
 import Testimonial from "@/app/screens/testimonial";
 import FAQ from "@/app/screens/faq";
 import Contact from "@/app/screens/contact";
-import Countdown from "./components/countdown";
 
 export default function Home() {
   return (

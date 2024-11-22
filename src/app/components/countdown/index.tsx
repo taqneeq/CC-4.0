@@ -2,8 +2,6 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Countdown from './Countdown.svg';
-import { section } from 'framer-motion/client';
-
 const CountdownTimer = () => {
   const targetDate = new Date('2025-02-14');
 

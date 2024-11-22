@@ -45,7 +45,7 @@ const CountdownTimer = () => {
       id="history"
     >
       <Image src={Countdown} alt="Countdown" className="w-full md:w-[75%] xl:w-[20%] h-auto -z-10" />
-      <div className="font-lcd text-3xl md:text-5xl xl:text-2xl grid grid-cols-4 gap-2 md:gap-4 xl:gap-2 absolute align-middle justify-center mt-5">
+      <div className="font-lcd text-3xl md:text-5xl xl:text-2xl grid grid-cols-4 gap-2 md:gap-4 xl:gap-2 absolute align-middle justify-center mt-6">
         <div>{timeRemaining.days}
             <br />
             <div className='font-retro text-base md:text-2xl xl:text-base'>Days</div>

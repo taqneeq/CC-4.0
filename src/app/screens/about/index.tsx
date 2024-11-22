@@ -46,11 +46,11 @@ export default function About() {
         </p>
       </div>
       <div
-        className="flex flex-col items-end justify-end gap-4 md:gap-2 lg:gap-4 w-full text-left"
+        className="flex flex-col justify-center items-start md:items-end md:justify-end gap-4 md:gap-2 lg:gap-4 w-full text-left"
         ref={titleRef2}
       >
         <h1
-          className="text-5xl md:text-8xl font-retro font-bold mb-8 drop-shadow-[5px_5px_0_rgba(245,59,64,1)]"
+          className="text-5xl md:text-8xl font-retro font-bold mb-8 drop-shadow-[5px_5px_0_rgba(245,59,64,1)] text-center "
           style={{
             opacity: isInView2 ? 1 : 0,
             transform: isInView2 ? "translateY(0)" : "translateY(50px)",

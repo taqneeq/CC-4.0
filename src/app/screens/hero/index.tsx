@@ -7,7 +7,7 @@ export default function Hero() {
   const isInView = useInView(titleRef, { once: true });
   return (
     <section
-      className="min-h-screen max-h-[1440px] max-w-7xl flex flex-col justify-center items-center relative md:gap-5 mx-auto"
+      className="min-h-screen pt-32 max-h-[1440px] max-w-7xl flex flex-col justify-center items-center relative md:gap-5 mx-auto"
       ref={titleRef}
     >
       <Image
@@ -62,7 +62,7 @@ export default function Hero() {
       </h1>
 
       <h2
-        className="text-center text-lg md:text-xl font-code font-bold mt-20"
+        className="text-center text-lg md:text-xl font-code font-bold mt-14"
         style={{
           opacity: isInView ? 1 : 0,
           transform: isInView ? "translateY(0)" : "translateY(50px)",

@@ -7,6 +7,7 @@ import Countdown from "./components/countdown";
 import Image from "next/image";
 import Space from "./space.jpg";
 import { IBM_Plex_Mono } from "next/font/google";
+import { Footer } from "./components/footer";
 
 const ibm = IBM_Plex_Mono({
   subsets: ["latin"],
@@ -29,7 +30,7 @@ const lcd = localFont({
 export const metadata: Metadata = {
   title: "Cyber Cypher by Taqneeq",
   description:
-    "Cyber CYpher is a 18 hour hackathon event that aims to bring together the best minds to innovate and build the future of technology.",
+    "Cyber Cypher is a 18 hour hackathon event that aims to bring together the best minds to innovate and build the future of technology.",
 };
 
 export default function RootLayout({
@@ -48,6 +49,7 @@ export default function RootLayout({
           <RetroGrid />{" "}
         </div>
         <main className="relative z-10 w-full">{children}</main>
+        <Footer />
       </body>
     </html>
   );

@@ -34,10 +34,10 @@ export default function Prizepool() {
         className="w-16 h-16 md:w-28 md:h-28 md:block absolute top-[40%] md:top-10 right-5 md:right-10 rotate-0"
       />
       <h1 className=" text-5xl md:text-6xl text-center font-retro font-bold">
-        Win from a Prize Pool of{" "}
+        Prize Pool of{" "}
       </h1>
-      <h1 className=" text-center text-7xl md:text-title font-retro font-bold [text-shadow:5px_5px_0px_var(--tw-shadow-color)] shadow-yellow-400 ">
-        Rs 200,000
+      <h1 className=" text-center tracking-wide text-7xl md:text-title font-retro font-bold [text-shadow:3px_3px_0px_var(--tw-shadow-color)] shadow-brandOrange ">
+        Rs 2,50,000
       </h1>
     </section>
   );

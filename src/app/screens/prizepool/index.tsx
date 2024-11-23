@@ -8,7 +8,7 @@ export default function Prizepool() {
         Win from Prize Pool of{" "}
       </h1>
       <h1 className=" text-center text-7xl md:text-title font-retro font-bold [text-shadow:5px_5px_0px_var(--tw-shadow-color)] shadow-yellow-400 ">
-        Rs 200,000
+        Rs 250,000
       </h1>
     </section>
   );

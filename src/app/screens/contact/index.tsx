@@ -106,16 +106,16 @@ export default function Contact() {
         className="hidden md:block absolute bottom-1/3 -right-10"
       />
       <motion.a
-        className="relative w-full sm:w-2/3 lg:w-1/2 h-40 bg-[#4d4d4d] backdrop-filter backdrop-blur-sm bg-opacity-20 border border-purple-400/60 flex items-center justify-center gap-6 text-white text-center p-6 shadow-lg hover:bg-purple-800 transition-colors duration-300 ease-in-out rounded-sm shadow-purple-500/40"
+        className="relative w-full h-full sm:w-2/3 lg:w-1/2 md:py-10 bg-[#4d4d4d] backdrop-filter backdrop-blur-sm bg-opacity-20 border border-purple-400/60 flex flex-col md:flex-row md:items-center justify-center gap-6 text-white text-center p-6 shadow-lg hover:bg-purple-800 transition-colors duration-300 ease-in-out rounded-sm shadow-purple-500/40 "
         variants={cardVariants}
         href="mailto:contact@taqneeqfest.com"
       >
-        <Mail size={48} className="text-purple-200" />
+        <Mail className="text-purple-200 w-10 h-10" />
         <div>
           <p className="text-3xl font-retro drop-shadow-[1px_1px_0_rgba(168,85,247,1)] mb-2 text-left">
             Email Us
           </p>
-          <p className="text-lg font-bold hover:underline font-code">
+          <p className="text-lg hover:underline font-code text-left">
             contact@taqneeqfest.com
           </p>
         </div>
@@ -137,7 +137,9 @@ export default function Contact() {
             <p className={`text-4xl font-retro ${contact.colour}`}>
               {contact.name}
             </p>
-            <p className="text-lg opacity-80 font-code">{contact.designation}</p>
+            <p className="text-lg opacity-80 font-code">
+              {contact.designation}
+            </p>
             <a
               href={contact.link}
               className="text-lg font-bold hover:underline font-code"

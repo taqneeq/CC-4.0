@@ -125,14 +125,14 @@ export default function FAQ() {
         alt="sparkle"
         width={70}
         height={70}
-        className="hidden md:block absolute top-1/2 right-10 rotate-12"
+        className="hidden md:block absolute top-1/2 right-10 rotate-0"
       />
       <Image
         src="/sparkle.svg"
         alt="sparkle"
         width={70}
         height={70}
-        className="hidden md:block absolute top-1/3 left-10 -rotate-12"
+        className="hidden md:block absolute top-1/3 left-10 -rotate-0"
       />
       <motion.div
         ref={titleRef}

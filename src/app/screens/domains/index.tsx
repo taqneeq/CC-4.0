@@ -136,14 +136,21 @@ export default function Domains() {
         alt="sparkle"
         width={70}
         height={70}
-        className="hidden md:block absolute bottom-1/2 left-10 rotate-12"
+        className="hidden md:block absolute bottom-1/4 left-10 rotate-0"
       />
       <Image
         src="/sparkle.svg"
         alt="sparkle"
         width={70}
         height={70}
-        className="hidden md:block absolute top-10 right-10 rotate-12"
+        className="hidden w-16 md:h-16 md:block absolute bottom-1/5 left-20 rotate-0"
+      />
+      <Image
+        src="/sparkle.svg"
+        alt="sparkle"
+        width={70}
+        height={70}
+        className="hidden md:block absolute top-10 right-10 rotate-0"
       />
 
       <motion.div

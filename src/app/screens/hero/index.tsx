@@ -15,9 +15,9 @@ export default function Hero() {
         alt="sparkle"
         width={70}
         height={70}
-        className="hidden md:block absolute md:top-1/3 left-10 "
+        className="w-10 h-10 md:block md:w-20 md:h-20 absolute top-[28%] md:top-1/4 left-5 md:left-32 "
         style={{
-          rotate: isInView ? "-12deg" : "0deg",
+          rotate: isInView ? "0deg" : "0deg",
           opacity: isInView ? 1 : 0,
           transform: isInView ? "translateY(0)" : "translateY(50px)",
           transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1)",
@@ -29,9 +29,37 @@ export default function Hero() {
         alt="sparkle"
         width={70}
         height={70}
-        className="hidden md:block absolute top-1/4 right-10 "
+        className="w-16 h-16 md:block md:w-28 md:h-28 absolute md:top-1/2 left-12 md:left-24 "
         style={{
-          rotate: isInView ? "12deg" : "0deg",
+          rotate: isInView ? "0deg" : "0deg",
+          opacity: isInView ? 1 : 0,
+          transform: isInView ? "translateY(0)" : "translateY(50px)",
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1)",
+          transitionDelay: "0.9s",
+        }}
+      ></Image>
+      <Image
+        src="/sparkle.svg"
+        alt="sparkle"
+        width={70}
+        height={70}
+        className="w-16 h-16 md:block md:w-28 md:h-28 absolute top-1/4 right-10 md:right-16"
+        style={{
+          rotate: isInView ? "0deg" : "0deg",
+          opacity: isInView ? 1 : 0,
+          transform: isInView ? "translateY(0)" : "translateY(50px)",
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1)",
+          transitionDelay: "1.1s",
+        }}
+      ></Image>
+      <Image
+        src="/sparkle.svg"
+        alt="sparkle"
+        width={70}
+        height={70}
+        className="w-11 h-11 md:block md:w-20 md:h-20 absolute top-1/3 right-6 md:right-4 "
+        style={{
+          rotate: isInView ? "0deg" : "0deg",
           opacity: isInView ? 1 : 0,
           transform: isInView ? "translateY(0)" : "translateY(50px)",
           transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1)",

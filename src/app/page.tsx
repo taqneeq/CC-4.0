@@ -1,6 +1,6 @@
 import Hero from "@/app/screens/hero";
 import About from "@/app/screens/about";
-import Pdomains from "@/app/screens/pdomains";
+import Domains from "@/app/screens/domains";
 // import Sponsors from "@/app/screens/sponsors";
 import Testimonial from "@/app/screens/testimonial";
 import FAQ from "@/app/screens/faq";
@@ -11,7 +11,7 @@ export default function Home() {
     <div className="w-full">
       <Hero />
       <About />
-      <Pdomains />
+      <Domains />
       {/* <Sponsors /> */}
       <Testimonial />
       <FAQ />

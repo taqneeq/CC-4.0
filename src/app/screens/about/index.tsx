@@ -69,13 +69,12 @@ export default function About() {
             transitionDelay: "0.5s",
           }}
         >
-          The goal of the 18-hour hackathon Cyber Cypher is to provide aspiring
-          and seasoned programmers a platform. Our aim is to reach engineering
-          students across all skill levels, from those with little coding
-          experience to those with extensive knowledge. Cyber Cypher aims to
-          awaken in the participants the boundless potential that this dynamic
-          field of computer sciences holds for them—potential that currently
-          lies dormant.
+          With three exciting and action-packed days in a row, Taqneeq has grown
+          into an extraordinary tech festival over the years. It has
+          successfully organized numerous noteworthy events, including The Talk,
+          Unstop, the Internship Fair, the Game Development Workshop, and Light
+          Reaction, to mention a few. Taqneeq has illuminated every aspect of
+          technology.
         </p>
       </div>
     </section>

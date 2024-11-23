@@ -3,7 +3,7 @@
 import { motion, AnimatePresence, useInView } from "framer-motion";
 import { useState, useRef } from "react";
 import Image from "next/image";
-import Card from "./card.svg";
+import SpaceBorder from "./SpaceBorder";
 
 interface FAQItem {
   question: string;
@@ -19,21 +19,44 @@ interface AccordionProps {
 
 const faqData: FAQItem[] = [
   {
-    question: "What Is CC? Why Should I Join?",
+    question: "When is Cyber Cypher?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+      "The first round of Cyber Cypher 4.0 will be held on 14 & 15th February 2024 and the second round will be held on 4 & 5th March 2024.",
   },
   {
-    question: "How Can I Participate?",
-    answer:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+    question: "How many rounds are there?",
+    answer: "There are 2 rounds in the hackathon.",
   },
   {
-    question: "What Are The Benefits?",
+    question: "What are the domains?",
     answer:
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.",
+      "A team can participate in Elementary or Advanced Level. The domains are:- Elementary Level: Edtech, Advanced Level: Generative AI.",
+  },
+  {
+    question: "How much is the registration fees?",
+    answer:
+      "The registration fees is INR 150 per participant so INR 450 for a team of 3 people.",
+  },
+  {
+    question: "How many people in a team?",
+    answer: "The team can consist of maximum 3 members.",
+  },
+  {
+    question: "Can I join even if I don't have a team?",
+    answer: "Yes, solo participation is allowed.",
+  },
+  {
+    question: "What are the prizes I can get if I win?",
+    answer:
+      "The prize pool for Cyber Cypher 4.0 is worth INR 2,50,000, including cash prizes, goodies, and certificates.",
+  },
+  {
+    question: "Will the second round be hybrid?",
+    answer:
+      "Yes, the second round will be hybrid. The offline participants will be hosted at MPSTME College, Mumbai.",
   },
 ];
+
 const Accordion: React.FC<AccordionProps> = ({
   item,
   isExpanded,
@@ -53,7 +76,21 @@ const Accordion: React.FC<AccordionProps> = ({
         <motion.div
           animate={{ rotate: isExpanded ? 180 : 0 }}
           transition={{ duration: 0.3 }}
-        />
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </motion.div>
       </motion.button>
 
       <AnimatePresence>
@@ -88,59 +125,35 @@ export default function FAQ() {
         alt="sparkle"
         width={70}
         height={70}
-        className="hidden md:block absolute top-1/2  right-10 rotate-12"
-      ></Image>
+        className="hidden md:block absolute top-1/2 right-10 rotate-12"
+      />
       <Image
         src="/sparkle.svg"
         alt="sparkle"
         width={70}
         height={70}
-        className="hidden md:block absolute top-1/3  left-10 -rotate-12"
-      ></Image>
+        className="hidden md:block absolute top-1/3 left-10 -rotate-12"
+      />
       <motion.div
         ref={titleRef}
         initial={{ opacity: 0, y: 20 }}
         animate={isTitleInView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.3, ease: [0.17, 0.55, 0.55, 1]}}
+        transition={{ duration: 0.3, ease: [0.17, 0.55, 0.55, 1] }}
       >
         <h1 className="text-center text-5xl md:text-8xl font-retro font-bold mb-8 drop-shadow-[5px_5px_0_rgba(245,59,64,1)]">
           FAQ
         </h1>
       </motion.div>
       <motion.div
-        className="hidden md:block relative w-full m-6 p-5 md:p-10 min-h-86  bg-contain  bg-no-repeat mx-auto"
-        style={{
-          backgroundImage: "url(" + Card.src + ")",
-          backgroundRepeat: "no-repeat",
-          width: "100%",
-          backgroundPosition: "center",
-        }}
+        className="relative md:w-4/5 w-full m-6 rounded-3xl p-5 md:p-10 h-full mx-auto"
         initial={{ opacity: 0, y: 20 }}
         animate={isTitleInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.3, ease: [0.17, 0.55, 0.55, 1], delay: 0.2 }}
       >
-        <div className="space-y-4 pt-24 max-w-2xl mx-auto">
-          {faqData.map((item, index) => (
-            <Accordion
-              key={index}
-              item={item}
-              index={index}
-              isExpanded={expandedIndex === index}
-              onToggle={() =>
-                setExpandedIndex(expandedIndex === index ? null : index)
-              }
-            />
-          ))}
+        <div className="absolute inset-0 w-full h-full">
+          <SpaceBorder />
         </div>
-      </motion.div>
-
-      <motion.div
-        className="md:hidden relative w-full m-6 p-5 md:p-10 h-full mx-auto bg-[#4D4D4D] backdrop-filter backdrop-blur-sm bg-opacity-10 border border-purple-800/30 "
-        initial={{ opacity: 0, y: 20 }}
-        animate={isTitleInView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.3, ease: [0.17, 0.55, 0.55, 1], delay: 0.2 }}
-      >
-        <div className="space-y-4 md:pt-24 max-w-2xl mx-auto">
+        <div className="relative z-10 space-y-4 pt-28  max-w-4xl mx-auto">
           {faqData.map((item, index) => (
             <Accordion
               key={index}

@@ -1,8 +1,10 @@
 "use client";
+
 import { motion } from "framer-motion";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 import Image from "next/image";
+import { Mail } from "lucide-react";
 
 export default function Contact() {
   const titleRef = useRef(null);
@@ -36,34 +38,37 @@ export default function Contact() {
     },
   };
 
-  // Contact numbers
+  // Contact information
   const contacts = [
     {
       number: "+91 99679 72473",
       link: "tel:+919967972473",
       name: "Rushabh Chhajed",
+      designation: "Chairperson",
       colour: "drop-shadow-[1px_1px_0_rgba(255,150,128,1)]",
       walink:
         "https://api.whatsapp.com/send?phone=919967972473&text=Hi%20there%2C%20I%20had%20some%20queries%20about%20Cyber%20Cypher!",
-      hover: "bg-red-800",
+      hover: "hover:bg-red-800",
     },
     {
       number: "+91 73036 11722",
       link: "tel:+917303611722",
       name: "Anushka Saxena",
+      designation: "Publicity Head",
       colour: "drop-shadow-[1px_1px_0_rgba(222,82,70,1)]",
       walink:
         "https://api.whatsapp.com/send?phone=917303611722&text=Hi%20there%2C%20I%20had%20some%20queries%20about%20Cyber%20Cypher!",
-      hover: "bg-pink-800",
+      hover: "hover:bg-pink-800",
     },
     {
       number: "+91 88509 69672",
       link: "tel:+918850969672",
       name: "Siddhi Gandhi",
+      designation: "Publicity Head",
       colour: "drop-shadow-[1px_1px_0_rgba(255,198,93,1)]",
       walink:
         "https://api.whatsapp.com/send?phone=918850969672&text=Hi%20there%2C%20I%20had%20some%20queries%20about%20Cyber%20Cypher!",
-      hover: "bg-cyan-800",
+      hover: "hover:bg-cyan-800",
     },
   ];
 
@@ -84,7 +89,11 @@ export default function Contact() {
         initial={{ opacity: 0, y: 20 }}
         animate={isTitleInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.9, ease: [0.17, 0.55, 0.55, 1], delay: 0.5 }}
+        className="flex flex-col items-center gap-4"
       >
+        <h2 className="text-center text-2xl md:text-4xl font-retro text-white opacity-80">
+          Got More Questions?
+        </h2>
         <h1 className="text-center text-5xl md:text-8xl font-retro font-bold mb-8 drop-shadow-[5px_5px_0_rgba(245,59,64,1)]">
           Contact Us
         </h1>
@@ -96,9 +105,24 @@ export default function Contact() {
         height={70}
         className="hidden md:block absolute bottom-1/3 -right-10"
       />
+      <motion.a
+        className="relative w-full sm:w-2/3 lg:w-1/2 h-40 bg-purple-600 backdrop-filter backdrop-blur-sm bg-opacity-20 border border-purple-400/60 flex items-center justify-center gap-6 text-white text-center p-6 shadow-lg hover:bg-purple-700 transition-colors duration-300 ease-in-out rounded-xl"
+        variants={cardVariants}
+        href="mailto:contact@taqneeqfest.com"
+      >
+        <Mail size={48} className="text-purple-200" />
+        <div>
+          <p className="text-3xl font-retro drop-shadow-[1px_1px_0_rgba(168,85,247,1)] mb-2">
+            Email Us
+          </p>
+          <p className="text-lg font-bold hover:underline">
+            contact@taqneeqfest.com
+          </p>
+        </div>
+      </motion.a>
       <motion.div
         ref={cardsRef}
-        className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 justify-items-center"
+        className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center"
         variants={containerVariants}
         initial="hidden"
         animate={isCardsInView ? "visible" : "hidden"}
@@ -106,13 +130,14 @@ export default function Contact() {
         {contacts.map((contact, index) => (
           <motion.a
             key={index}
-            className={`relative w-full h-60 bg-[#4D4D4D] backdrop-filter backdrop-blur-sm bg-opacity-10 border border-cyan-800/60  flex flex-col items-center justify-center gap-4 text-white text-center p-6 shadow-lg hover:bg-red-800 transition-colors duration-300 ease-in-out`}
+            className={`relative w-full h-72 bg-[#4D4D4D] backdrop-filter backdrop-blur-sm bg-opacity-10 border border-cyan-800/60 flex flex-col items-center justify-center gap-4 text-white text-center p-6 shadow-lg ${contact.hover} transition-colors duration-300 ease-in-out`}
             variants={cardVariants}
             href={contact.walink}
           >
             <p className={`text-4xl font-retro ${contact.colour}`}>
               {contact.name}
             </p>
+            <p className="text-lg opacity-80">{contact.designation}</p>
             <a
               href={contact.link}
               className="text-lg font-bold hover:underline"

@@ -15,7 +15,7 @@ export default function Hero() {
         alt="sparkle"
         width={70}
         height={70}
-        className="w-10 h-10 md:block md:w-20 md:h-20 absolute top-[28%] md:top-1/4 left-5 md:left-32 "
+        className="w-10 h-10 md:block md:w-20 md:h-20 absolute top-[25%] md:top-1/4 left-5 md:left-32 "
         style={{
           rotate: isInView ? "0deg" : "0deg",
           opacity: isInView ? 1 : 0,

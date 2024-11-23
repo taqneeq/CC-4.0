@@ -128,7 +128,7 @@ export default function Domains() {
 
   return (
     <section
-      className="min-h-screen w-full flex flex-col justify-center items-center p-8 gap-10 relative"
+      className="h-full py-20 w-full flex flex-col justify-center items-center p-8 gap-10 relative"
       id="prior-domains"
     >
       <Image
@@ -153,7 +153,7 @@ export default function Domains() {
         transition={{ duration: 0.9, ease: [0.17, 0.55, 0.55, 1], delay: 0.5 }}
       >
         <h1 className="text-center text-5xl md:text-8xl font-retro font-bold mb-8 drop-shadow-[5px_5px_0_rgba(245,59,64,1)] relative z-10">
-           Domains
+          Domains
         </h1>
       </motion.div>
 
@@ -165,12 +165,12 @@ export default function Domains() {
           variants={cardVariants}
           className="w-full max-w-md"
         >
-          <div className="relative overflow-hidden  rounded-lg shadow-lg ">
+          <div className="relative overflow-hidden  shadow-lg ">
             <div className="absolute inset-0 w-full h-full">
               <CardBackground />
             </div>
-            <div className="relative z-10 p-6  h-full flex flex-col justify-center bg-opacity-5 bg-white">
-              <h2 className=" text-4xl md:text-6xl font-retro font-bold mb-4 drop-shadow-[5px_5px_0_rgba(245,59,64,1)] relative z-10">
+            <div className="relative z-10 p-6  h-full flex flex-col justify-center">
+              <h2 className=" text-4xl md:text-6xl font-retro font-bold mb-4 [text-shadow:3px_3px_0px_var(--tw-shadow-color)] shadow-teal-400 relative z-10">
                 EdTech
               </h2>
               <p className="text-white font-code">
@@ -190,11 +190,11 @@ export default function Domains() {
           variants={cardVariants}
           className="w-full max-w-md"
         >
-          <div className="relative overflow-hidden rounded-lg shadow-lg ">
+          <div className="relative overflow-hidden shadow-lg ">
             <CardBackground />
-            <div className="relative z-10 p-6 h-full flex flex-col justify-center bg-opacity-5 bg-white">
-              <h2 className=" text-4xl md:text-6xl font-retro font-bold mb-4 drop-shadow-[5px_5px_0_rgba(245,59,64,1)] relative z-10">
-                GenAI
+            <div className="relative z-10 p-6 h-full flex flex-col justify-center ">
+              <h2 className=" text-4xl md:text-6xl font-retro font-bold mb-4 [text-shadow:3px_3px_0px_var(--tw-shadow-color)] shadow-teal-400 relative z-10">
+                Gen AI
               </h2>
               <p className="text-white font-code">
                 Utilize cutting-edge generative models to innovate, solve

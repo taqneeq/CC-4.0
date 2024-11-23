@@ -7,7 +7,7 @@ export default function Testimonial() {
   const isInView = useInView(titleRef, { once: true });
   return (
     <section
-      className="min-h-screen max-h-[1440px] w-full flex flex-col justify-center items-center p-8 gap-10 max-w-7xl mx-auto relative"
+      className="h-full py-20 w-full flex flex-col justify-center items-center p-8 gap-10 max-w-7xl mx-auto relative"
       ref={titleRef}
     >
       <h1
@@ -22,7 +22,7 @@ export default function Testimonial() {
       </h1>
       <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 justify-items-center h-full">
         <div
-          className="border border-pink-600 border-double drop-shadow-[1px_1px_0_rgba(245,59,64,1)] transition-all duration-300 ease-in-out items-center space-y-5 p-12 rounded-sm body-lg col text-medium bg-[#4D4D4D] backdrop-filter backdrop-blur-sm bg-opacity-10 h-full"
+          className="border border-pink-600 border-double drop-shadow-[1px_1px_0_rgba(245,59,64,1)] transition-all duration-300 ease-in-out items-center space-y-5 p-6 md:p-12 rounded-sm body-lg col text-medium bg-[#4D4D4D] backdrop-filter backdrop-blur-sm bg-opacity-10 h-full"
           style={{
             opacity: isInView ? 1 : 0,
             transform: isInView ? "translateY(0)" : "translateY(50px)",
@@ -41,7 +41,7 @@ export default function Testimonial() {
         </div>
 
         <div
-          className="border border-pink-600 border-double drop-shadow-[1px_1px_0_rgba(113,208,202,1)] transition-all duration-300 ease-in-out items-center space-y-5 p-12 rounded-sm body-lg col text-medium bg-[#4D4D4D] backdrop-filter backdrop-blur-sm bg-opacity-10 h-full"
+          className="border border-pink-600 border-double drop-shadow-[1px_1px_0_rgba(113,208,202,1)] transition-all duration-300 ease-in-out items-center space-y-5 p-6 md:p-12  rounded-sm body-lg col text-medium bg-[#4D4D4D] backdrop-filter backdrop-blur-sm bg-opacity-10 h-full"
           style={{
             opacity: isInView ? 1 : 0,
             transform: isInView ? "translateY(0)" : "translateY(50px)",
@@ -61,7 +61,7 @@ export default function Testimonial() {
         </div>
 
         <div
-          className="border border-pink-600 border-double drop-shadow-[1px_1px_0_rgba(140,122,230,1)] transition-all duration-300 ease-in-out items-center space-y-5 p-12 rounded-sm body-lg col text-medium bg-[#4D4D4D] backdrop-filter backdrop-blur-sm bg-opacity-10 h-full"
+          className="border border-pink-600 border-double drop-shadow-[1px_1px_0_rgba(140,122,230,1)] transition-all duration-300 ease-in-out items-center space-y-5 p-6 md:p-12  rounded-sm body-lg col text-medium bg-[#4D4D4D] backdrop-filter backdrop-blur-sm bg-opacity-10 h-full"
           style={{
             opacity: isInView ? 1 : 0,
             transform: isInView ? "translateY(0)" : "translateY(50px)",

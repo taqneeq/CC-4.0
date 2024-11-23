@@ -10,15 +10,15 @@ export default function About() {
   const isInView2 = useInView(titleRef2, { once: true });
   return (
     <section
-      className="min-h-screen  w-full flex-col items-center text-center justify-around md:ml-auto p-8 space-y-20 relative max-w-7xl mx-auto"
+      className="h-full py-20  w-full flex-col items-center text-center justify-center md:justify-around md:ml-auto p-8 space-y-20 relative max-w-7xl mx-auto"
       id="about"
     >
       <div
-        className="flex flex-col items-start justify-start gap-4 md:gap-2 lg:gap-4 w-full text-left"
+        className="flex flex-col items-center md:items-start  justify-start gap-4 md:gap-2 lg:gap-4 w-full text-left"
         ref={titleRef}
       >
         <h1
-          className="text-5xl md:text-8xl font-retro font-bold mb-8 drop-shadow-[5px_5px_0_rgba(245,59,64,1)]"
+          className="text-5xl md:text-8xl font-retro font-bold mb-8 drop-shadow-[5px_5px_0_rgba(245,59,64,1)] text-center md:text-left"
           style={{
             opacity: isInView ? 1 : 0,
             transform: isInView ? "translateY(0)" : "translateY(50px)",
@@ -46,7 +46,7 @@ export default function About() {
         </p>
       </div>
       <div
-        className="flex flex-col justify-center items-start md:items-end md:justify-end gap-4 md:gap-2 lg:gap-4 w-full text-left"
+        className="flex flex-col justify-center  items-center md:items-end md:justify-end gap-4 md:gap-2 lg:gap-4 w-full text-left"
         ref={titleRef2}
       >
         <h1

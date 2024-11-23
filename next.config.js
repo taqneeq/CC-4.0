@@ -1,3 +1,3 @@
-const nextConfig = {};
+const nextConfig = { output: "export" };
 
- nextConfig;
+nextConfig;

@@ -117,7 +117,7 @@ export default function FAQ() {
 
   return (
     <div
-      className="min-h-screen max-h-[1440px] w-full flex flex-col gap-10 justify-center items-center p-4 md:p-8 relative"
+      className="h-full py-20 w-full flex flex-col gap-10 justify-center items-center p-4 md:p-8 relative"
       id="faq"
     >
       <Image
@@ -145,15 +145,15 @@ export default function FAQ() {
         </h1>
       </motion.div>
       <motion.div
-        className="relative md:w-4/5 w-full m-6 rounded-3xl p-5 md:p-10 h-full mx-auto"
+        className="relative md:w-4/5 w-full m-6 p-5 md:p-10 h-full mx-auto max-w-7xl bg-[#4D4D4D] backdrop-filter backdrop-blur-sm bg-opacity-20 border border-purple-400/30 flex items-center justify-center gap-6 text-white  rounded-sm md:border-none md:bg-transparent"
         initial={{ opacity: 0, y: 20 }}
         animate={isTitleInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.3, ease: [0.17, 0.55, 0.55, 1], delay: 0.2 }}
       >
-        <div className="absolute inset-0 w-full h-full">
+        <div className="hidden md:block absolute inset-0 w-full h-full">
           <SpaceBorder />
         </div>
-        <div className="relative z-10 space-y-4 pt-28  max-w-4xl mx-auto">
+        <div className="relative z-10 space-y-4 md:pt-28  max-w-4xl mx-auto">
           {faqData.map((item, index) => (
             <Accordion
               key={index}

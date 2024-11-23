@@ -74,7 +74,7 @@ export default function Contact() {
 
   return (
     <section
-      className="min-h-screen max-h-[1440px] w-full flex flex-col justify-center items-center p-8 gap-10 max-w-7xl mx-auto relative"
+      className="h-full py-20 w-full flex flex-col justify-center items-center p-8 gap-10 max-w-7xl mx-auto relative"
       id="contact"
     >
       <Image
@@ -106,16 +106,16 @@ export default function Contact() {
         className="hidden md:block absolute bottom-1/3 -right-10"
       />
       <motion.a
-        className="relative w-full sm:w-2/3 lg:w-1/2 h-40 bg-purple-600 backdrop-filter backdrop-blur-sm bg-opacity-20 border border-purple-400/60 flex items-center justify-center gap-6 text-white text-center p-6 shadow-lg hover:bg-purple-700 transition-colors duration-300 ease-in-out rounded-xl"
+        className="relative w-full sm:w-2/3 lg:w-1/2 h-40 bg-[#4d4d4d] backdrop-filter backdrop-blur-sm bg-opacity-20 border border-purple-400/60 flex items-center justify-center gap-6 text-white text-center p-6 shadow-lg hover:bg-purple-800 transition-colors duration-300 ease-in-out rounded-sm shadow-purple-500/40"
         variants={cardVariants}
         href="mailto:contact@taqneeqfest.com"
       >
         <Mail size={48} className="text-purple-200" />
         <div>
-          <p className="text-3xl font-retro drop-shadow-[1px_1px_0_rgba(168,85,247,1)] mb-2">
+          <p className="text-3xl font-retro drop-shadow-[1px_1px_0_rgba(168,85,247,1)] mb-2 text-left">
             Email Us
           </p>
-          <p className="text-lg font-bold hover:underline">
+          <p className="text-lg font-bold hover:underline font-code">
             contact@taqneeqfest.com
           </p>
         </div>
@@ -137,10 +137,10 @@ export default function Contact() {
             <p className={`text-4xl font-retro ${contact.colour}`}>
               {contact.name}
             </p>
-            <p className="text-lg opacity-80">{contact.designation}</p>
+            <p className="text-lg opacity-80 font-code">{contact.designation}</p>
             <a
               href={contact.link}
-              className="text-lg font-bold hover:underline"
+              className="text-lg font-bold hover:underline font-code"
             >
               {contact.number}
             </a>

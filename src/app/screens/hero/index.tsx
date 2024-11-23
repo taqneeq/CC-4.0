@@ -50,7 +50,7 @@ export default function Hero() {
       </h1>
 
       <h1
-        className="text-center text-7xl md:text-title font-retro font-bold [text-shadow:5px_5px_0px_var(--tw-shadow-color)] shadow-brandOrange leading-10 ml-20 md:ml-40 md:py-5"
+        className="text-center text-7xl md:text-title font-retro font-bold [text-shadow:5px_5px_0px_var(--tw-shadow-color)] shadow-cyan-400 leading-10 ml-20 md:ml-40 md:py-5"
         style={{
           opacity: isInView ? 1 : 0,
           transform: isInView ? "translateY(0)" : "translateY(50px)",
@@ -59,6 +59,17 @@ export default function Hero() {
         }}
       >
         Cypher
+      </h1>
+      <h1
+        className="text-center text-6xl md:text-[8.5rem] font-retro font-bold [text-shadow:5px_5px_0px_var(--tw-shadow-color)] shadow-pink-500 leading-10 mt-8 md:mt-20"
+        style={{
+          opacity: isInView ? 1 : 0,
+          transform: isInView ? "translateY(0)" : "translateY(50px)",
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1)",
+          transitionDelay: "0.2s",
+        }}
+      >
+        4.0
       </h1>
 
       <h2

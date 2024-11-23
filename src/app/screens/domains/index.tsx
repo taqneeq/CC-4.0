@@ -170,7 +170,7 @@ export default function Domains() {
               <CardBackground />
             </div>
             <div className="relative z-10 p-6  h-full flex flex-col justify-center">
-              <h2 className=" text-4xl md:text-6xl font-retro font-bold mb-4 [text-shadow:3px_3px_0px_var(--tw-shadow-color)] shadow-teal-400 relative z-10">
+              <h2 className=" text-4xl md:text-6xl font-retro font-bold mb-4 [text-shadow:3px_3px_0px_var(--tw-shadow-color)] shadow-teal-700 relative z-10">
                 EdTech
               </h2>
               <p className="text-white font-code">
@@ -193,7 +193,7 @@ export default function Domains() {
           <div className="relative overflow-hidden shadow-lg ">
             <CardBackground />
             <div className="relative z-10 p-6 h-full flex flex-col justify-center ">
-              <h2 className=" text-4xl md:text-6xl font-retro font-bold mb-4 [text-shadow:3px_3px_0px_var(--tw-shadow-color)] shadow-teal-400 relative z-10">
+              <h2 className=" text-4xl md:text-6xl font-retro font-bold mb-4 [text-shadow:3px_3px_0px_var(--tw-shadow-color)] shadow-teal-700 relative z-10">
                 Gen AI
               </h2>
               <p className="text-white font-code">

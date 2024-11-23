@@ -7,7 +7,7 @@ export default function Hero() {
   const isInView = useInView(titleRef, { once: true });
   return (
     <section
-      className="min-h-screen pt-32 max-h-[1440px] max-w-7xl flex flex-col justify-center items-center relative md:gap-5 mx-auto"
+      className="min-h-[90vh] pt-32 max-h-[1440px] max-w-7xl flex flex-col justify-center items-center relative md:gap-5 mx-auto"
       ref={titleRef}
     >
       <Image
@@ -39,7 +39,7 @@ export default function Hero() {
         }}
       ></Image>
       <h1
-        className="text-center text-7xl md:text-title font-retro font-bold [text-shadow:5px_5px_0px_var(--tw-shadow-color)] shadow-brandRed mr-20 md:mr-40"
+        className="text-center text-8xl md:text-title font-retro font-bold [text-shadow:5px_5px_0px_var(--tw-shadow-color)] shadow-brandRed md:mt-4 mr-20 md:mr-40"
         style={{
           opacity: isInView ? 1 : 0,
           transform: isInView ? "translateY(0)" : "translateY(50px)",
@@ -50,7 +50,7 @@ export default function Hero() {
       </h1>
 
       <h1
-        className="text-center text-7xl md:text-title font-retro font-bold [text-shadow:5px_5px_0px_var(--tw-shadow-color)] shadow-cyan-400 leading-10 ml-20 md:ml-40 md:py-5"
+        className="text-center text-8xl md:text-title font-retro font-bold [text-shadow:5px_5px_0px_var(--tw-shadow-color)] shadow-teal-600 leading-10 mt-6 md:mt-0 ml-16 md:ml-40 md:py-5"
         style={{
           opacity: isInView ? 1 : 0,
           transform: isInView ? "translateY(0)" : "translateY(50px)",
@@ -61,7 +61,7 @@ export default function Hero() {
         Cypher
       </h1>
       <h1
-        className="text-center text-6xl md:text-[8.5rem] font-retro font-bold [text-shadow:5px_5px_0px_var(--tw-shadow-color)] shadow-pink-500 leading-10 mt-8 md:mt-20"
+        className="text-center text-7xl md:text-[8.5rem] font-retro font-bold [text-shadow:5px_5px_0px_var(--tw-shadow-color)] shadow-orange-700 leading-10 mt-12 md:mt-20"
         style={{
           opacity: isInView ? 1 : 0,
           transform: isInView ? "translateY(0)" : "translateY(50px)",
@@ -84,7 +84,7 @@ export default function Hero() {
         NMIMS&apos;s Official Hackathon!
       </h2>
       <button
-        className="bg-brandRed font-retro p-2 m-6 text-lg rounded-sm hover:bg-brandRed/60"
+        className="bg-brandRed flex items-center gap-2 font-retro p-2 m-6 mt-4 text-lg rounded-sm hover:bg-brandRed/60"
         style={{
           opacity: isInView ? 1 : 0,
           transform: isInView ? "translateY(0)" : "translateY(50px)",
@@ -92,7 +92,7 @@ export default function Hero() {
           transitionDelay: "0.7s",
         }}
       >
-        Register Now!
+        Register Now!<Image src={"unstop-logo.svg"} height={50} width={50} alt="unstop logo"></Image>
       </button>
     </section>
   );

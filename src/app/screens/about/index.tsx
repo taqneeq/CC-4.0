@@ -1,7 +1,7 @@
 "use client";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
-
+import Image from "next/image";
 export default function About() {
   const titleRef = useRef(null);
   const isInView = useInView(titleRef, { once: true });
@@ -13,6 +13,7 @@ export default function About() {
       className="h-full py-20  w-full flex-col items-center text-center justify-center md:justify-around md:ml-auto p-8 space-y-20 relative max-w-7xl mx-auto"
       id="about"
     >
+      
       <div
         className="flex flex-col items-center md:items-start  justify-start gap-4 md:gap-2 lg:gap-4 w-full text-left"
         ref={titleRef}
@@ -45,6 +46,20 @@ export default function About() {
           lies dormant.
         </p>
       </div>
+      <Image
+        src="/sparkle.svg"
+        alt="sparkle"
+        width={70}
+        height={70}
+        className="hidden md:w-16 md:h-16 md:block absolute top-1/3 md:top-1/4 right-16 md:right-10 rotate-0"
+      />
+      <Image
+        src="/sparkle.svg"
+        alt="sparkle"
+        width={70}
+        height={70}
+        className="w-16 h-16 md:w-28 md:h-28 md:block absolute top-[45%] md:top-14 right-5 md:right-16 rotate-0"
+      />
       <div
         className="flex flex-col justify-center  items-center md:items-end md:justify-end gap-4 md:gap-2 lg:gap-4 w-full text-left"
         ref={titleRef2}
@@ -77,6 +92,20 @@ export default function About() {
           technology.
         </p>
       </div>
+      <Image
+        src="/sparkle.svg"
+        alt="sparkle"
+        width={70}
+        height={70}
+        className="w-16 h-16 md:w-28 md:h-28 md:block absolute bottom-0 md:bottom-1/3 left-5 md:left-16 rotate-0"
+      />
+      <Image
+        src="/sparkle.svg"
+        alt="sparkle"
+        width={70}
+        height={70}
+        className="hidden md:w-16 md:h-16 md:block absolute bottom-1/4 md:bottom-1/4 left-5 md:left-16 rotate-0"
+      />
     </section>
   );
 }

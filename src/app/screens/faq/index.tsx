@@ -35,7 +35,7 @@ const faqData: FAQItem[] = [
   {
     question: "How much is the registration fees?",
     answer:
-      "The registration fees is INR 150 per participant so INR 450 for a team of 3 people.",
+      "The registration fees is INR 200 per participant so INR 600 for a team of 3 people.",
   },
   {
     question: "How many people in a team?",

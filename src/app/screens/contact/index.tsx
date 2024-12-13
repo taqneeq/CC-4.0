@@ -108,7 +108,7 @@ export default function Contact() {
       <motion.a
         className="relative w-full h-full sm:w-2/3 lg:w-1/2 md:py-10 bg-[#4d4d4d] backdrop-filter backdrop-blur-sm bg-opacity-20 border border-purple-400/60 flex flex-col md:flex-row md:items-center justify-center gap-6 text-white text-center p-6 shadow-lg hover:bg-purple-800 transition-colors duration-300 ease-in-out rounded-sm shadow-purple-500/40 "
         variants={cardVariants}
-        href="mailto:contact@taqneeqfest.com"
+        href="mailto:support@taqneeqfest.com"
       >
         <Mail className="text-purple-200 w-10 h-10" />
         <div>

@@ -116,7 +116,7 @@ export default function Contact() {
             Email Us
           </p>
           <p className="text-lg hover:underline font-code text-left">
-            contact@taqneeqfest.com
+            support@taqneeqfest.com
           </p>
         </div>
       </motion.a>

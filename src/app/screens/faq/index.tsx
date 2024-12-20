@@ -21,7 +21,7 @@ const faqData: FAQItem[] = [
   {
     question: "When is Cyber Cypher?",
     answer:
-      "The first round of Cyber Cypher 4.0 will be held on 14 & 15th February 2024 and the second round will be held on 4 & 5th March 2024.",
+      "The first round of Cyber Cypher 4.0 will be held on 15th & 16th February 2024 and the second round will be held on 4 & 5th March 2024.",
   },
   {
     question: "How many rounds are there?",

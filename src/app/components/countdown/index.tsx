@@ -49,7 +49,7 @@ const CountdownTimer = () => {
   return (
     <section className="absolute inset-0">
       <section
-        className="w-full flex flex-col justify-center items-center p-8 relative"
+        className="w-full flex flex-col justify-center items-center p-3 relative"
         id="history"
       >
         <Image

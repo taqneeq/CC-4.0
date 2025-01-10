@@ -10,7 +10,7 @@ export default function Hero() {
       className="min-h-[90vh] pt-32 max-h-[1440px] max-w-7xl flex flex-col justify-center items-center relative md:gap-5 mx-auto"
       ref={titleRef}
     >
-      <Image
+      {/* <Image
         src="/sparkle.svg"
         alt="sparkle"
         width={70}
@@ -23,7 +23,7 @@ export default function Hero() {
           transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1)",
           transitionDelay: "0.9s",
         }}
-      ></Image>
+      ></Image> */}
       <Image
         src="/sparkle.svg"
         alt="sparkle"

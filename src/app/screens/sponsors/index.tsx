@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { useInView } from "framer-motion";
 import Image from "next/image";
 import Rio from "./rio.svg";
+import IB from "./InterviewBuddy.svg";
 
 export default function Sponsors() {
   const titleRef = useRef(null);
@@ -11,7 +12,7 @@ export default function Sponsors() {
   const isTitleInView = useInView(titleRef, { once: true });
   const isCardsInView = useInView(cardsRef, { once: true });
 
-  const sponsor = [Rio, Rio, Rio, Rio];
+  const sponsor = [IB];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -69,7 +70,7 @@ export default function Sponsors() {
       ></Image>
       <motion.div
         ref={cardsRef}
-        className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 justify-items-center"
+        className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-4 justify-items-center"
         variants={containerVariants}
         initial="hidden"
         animate={isCardsInView ? "visible" : "hidden"}

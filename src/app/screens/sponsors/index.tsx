@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 import Image from "next/image";
-import Rio from "./rio.svg";
 import IB from "./InterviewBuddy.svg";
 
 export default function Sponsors() {

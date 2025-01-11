@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { useInView } from "framer-motion";
 import Image from "next/image";
 import IB from "./InterviewBuddy.svg";
+import Domain from "./domain.png";
 
 export default function Sponsors() {
   const titleRef = useRef(null);
@@ -11,7 +12,7 @@ export default function Sponsors() {
   const isTitleInView = useInView(titleRef, { once: true });
   const isCardsInView = useInView(cardsRef, { once: true });
 
-  const sponsor = [IB];
+  const sponsor = [IB, Domain];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -40,8 +41,9 @@ export default function Sponsors() {
   };
 
   return (
-    <section className="min-h-screen max-h-[1440px] w-full flex flex-col justify-center items-center p-8 gap-10 max-w-7xl mx-auto relative"
-    id="sponsor"
+    <section
+      className="min-h-screen max-h-[1440px] w-full flex flex-col justify-center items-center p-8 gap-10 max-w-7xl mx-auto relative"
+      id="sponsor"
     >
       <Image
         src="/sparkle.svg"
@@ -69,7 +71,7 @@ export default function Sponsors() {
       ></Image>
       <motion.div
         ref={cardsRef}
-        className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-4 justify-items-center"
+        className="w-full grid grid-cols-1 sm:grid-cols-2  gap-4 justify-items-center"
         variants={containerVariants}
         initial="hidden"
         animate={isCardsInView ? "visible" : "hidden"}

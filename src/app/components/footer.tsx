@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Instagram, Linkedin ,Twitter} from "lucide-react";
+import { Instagram, Linkedin } from "lucide-react";
 import { FaXTwitter } from "react-icons/fa6";
 
 

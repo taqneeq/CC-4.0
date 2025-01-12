@@ -1,5 +1,7 @@
 import Image from "next/image";
-import { Instagram, Linkedin } from "lucide-react";
+import { Instagram, Linkedin ,Twitter} from "lucide-react";
+import { FaXTwitter } from "react-icons/fa6";
+
 
 export const Footer = () => {
   return (
@@ -37,6 +39,17 @@ export const Footer = () => {
                 className="hover:opacity-75 transition-opacity"
               >
                 <Linkedin
+                  size={25}
+                  className="hover:text-brandYellow hover:scale-110"
+                />
+              </a>
+            </li>
+            <li className="text-[15px]/normal font-medium text-neutral-400 transition-all duration-100 ease-linear hover:text-neutral-900 hover:underline hover:underline-offset-4 dark:font-medium dark:text-neutral-400 hover:dark:text-neutral-100">
+              <a
+                href="https://x.com/taqneeqtechfest"
+                className="hover:opacity-75 transition-opacity"
+              >
+                <FaXTwitter
                   size={25}
                   className="hover:text-brandYellow hover:scale-110"
                 />

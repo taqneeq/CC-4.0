@@ -6,6 +6,7 @@ import Image from "next/image";
 import IB from "./InterviewBuddy.svg";
 import Domain from "./domain.png";
 import HackerRank from "./hackerRank.svg";
+import Duple from "./duple.svg";
 
 export default function Sponsors() {
   const titleRef = useRef(null);
@@ -13,7 +14,7 @@ export default function Sponsors() {
   const isTitleInView = useInView(titleRef, { once: true });
   const isCardsInView = useInView(cardsRef, { once: true });
 
-  const sponsor = [IB, Domain, HackerRank];
+  const sponsor = [IB, Domain, HackerRank, Duple];
 
   const containerVariants = {
     hidden: { opacity: 0 },

@@ -10,7 +10,7 @@ export const Footer = () => {
         <div className="flex items-center gap-x-2">
           <Image
             className="h-8 w-8 rounded-full"
-            src="/cc.png"
+            src="/cc2.png"
             width={64}
             height={64}
             alt="Taqneeq Fest Logo"

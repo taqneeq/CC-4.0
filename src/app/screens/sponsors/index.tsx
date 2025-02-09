@@ -7,6 +7,8 @@ import IB from "./InterviewBuddy.svg";
 import Domain from "./domain.png";
 import HackerRank from "./hackerRank.svg";
 import Duple from "./duple.svg";
+import FOF from "./fof.svg";
+import AWS from "./aws.svg";
 
 export default function Sponsors() {
   const titleRef = useRef(null);
@@ -14,7 +16,7 @@ export default function Sponsors() {
   const isTitleInView = useInView(titleRef, { once: true });
   const isCardsInView = useInView(cardsRef, { once: true });
 
-  const sponsor = [IB, Domain, HackerRank, Duple];
+  const sponsor = [IB, Domain, HackerRank, Duple, FOF, AWS];
 
   const containerVariants = {
     hidden: { opacity: 0 },

@@ -46,7 +46,7 @@ export default function Sponsors() {
 
   return (
     <section
-      className="min-h-screen max-h-[1440px] w-full flex flex-col justify-center items-center p-8 gap-10 max-w-7xl mx-auto relative"
+      className="min-h-screen  w-full flex flex-col justify-center items-center p-8 gap-10 max-w-7xl mx-auto relative"
       id="sponsor"
     >
       <Image

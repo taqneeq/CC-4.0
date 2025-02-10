@@ -9,6 +9,7 @@ import HackerRank from "./hackerRank.svg";
 import Duple from "./duple.svg";
 import FOF from "./fof.svg";
 import AWS from "./aws.svg";
+import Shadow from "./shadow.png";
 
 export default function Sponsors() {
   const titleRef = useRef(null);
@@ -16,7 +17,7 @@ export default function Sponsors() {
   const isTitleInView = useInView(titleRef, { once: true });
   const isCardsInView = useInView(cardsRef, { once: true });
 
-  const sponsor = [IB, Domain, HackerRank, Duple, FOF, AWS];
+  const sponsor = [IB, Domain, HackerRank, Duple, FOF, AWS, Shadow];
 
   const containerVariants = {
     hidden: { opacity: 0 },

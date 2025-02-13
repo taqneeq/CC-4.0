@@ -1,13 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { RetroGrid } from "@/app/components/grid";
-//import Navbar from "./components/navbar";
-import Countdown from "./components/countdown";
-import Image from "next/image";
-import Space from "./space.jpg";
 import { IBM_Plex_Mono } from "next/font/google";
-import { Footer } from "./components/footer";
 
 const ibm = IBM_Plex_Mono({
   subsets: ["latin"],

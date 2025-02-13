@@ -61,7 +61,7 @@ const ProblemStatementPage: React.FC = () => {
           )}
         </div>
 
-        <div className=" p-4 border border-purple-500/20 rounded bg-gray-700 backdrop-filter backdrop-blur-sm bg-opacity-10 text-2xl">
+        <div className=" p-4 border border-purple-500/20 rounded bg-gray-700 backdrop-filter backdrop-blur-sm bg-opacity-10 text-lg md:text-2xl">
           {selectedRound === "elementary" && (
             <div>
               <p className="my-5 text-purple-100 text-justify">

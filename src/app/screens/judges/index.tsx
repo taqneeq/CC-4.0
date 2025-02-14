@@ -12,7 +12,7 @@ interface Judge {
 
 const uiUxJudges: Judge[] = [
   {
-    image: "https://thispersondoesnotexist.com/",
+    image: "/judges/abhishek_varma_uiux.jpg",
     name: "Abhishek Verma",
     position: "Vice President",
     company: "Info Edge India Ltd",
@@ -43,7 +43,7 @@ const uiUxJudges: Judge[] = [
     company: "Cervello",
   },
   {
-    image: "https://thispersondoesnotexist.com/",
+    image: "/judges/ali_solanki_uiux.jpg",
 
     name: "Ali Solanki",
     position: "Serial Internet Entreprenuer",
@@ -56,7 +56,7 @@ const uiUxJudges: Judge[] = [
     company: "Seven11designs",
   },
   {
-    image: "https://thispersondoesnotexist.com/",
+    image: "/judges/Prashanth_Mariappan_uiux.jpg",
 
     name: "Prashanth Mariappan",
     position: "Lead UI/UX Designer",
@@ -75,7 +75,7 @@ const uiUxJudges: Judge[] = [
     company: "YouMeWho",
   },
   {
-    image: "https://thispersondoesnotexist.com/",
+    image: "/judges/dhruv_shah_uiux.png",
 
     name: "Dhruv Shah",
     position: "Software Development Engineer",
@@ -89,7 +89,7 @@ const uiUxJudges: Judge[] = [
     company: "Red & White Multimedia Education Official",
   },
   {
-    image: "https://thispersondoesnotexist.com/",
+    image: "/judges/nikhil_uiux.png",
     name: "Nikhil Digi",
     position: "Lead UI/UX Designer",
     company: "Neokred",
@@ -132,48 +132,48 @@ const uiUxJudges: Judge[] = [
 
 const genAiJudges: Judge[] = [
   {
-    image: "https://thispersondoesnotexist.com/",
+    image: "/judges/ravi_m_ai.png",
 
     name: "Ravi Manjunatha",
     position: "Gen AI & Data Analytics Specialist",
     company: "Google",
   },
   {
-    image: "https://thispersondoesnotexist.com/",
+    image: "/judges/harshada_patil_ai.png",
 
     name: "Harshada PatiL",
     position: "Senior Software Engineer",
     company: "Capgemini",
   },
   {
-    image: "https://thispersondoesnotexist.com/",
+    image: "/judges/amar_kumar_ai.png",
     name: "Amar Kumar",
     position: "AI Scientist",
     company: "Arthrex India",
   },
   {
-    image: "https://thispersondoesnotexist.com/",
+    image: "/judges/avinash_nayar_ai.png",
 
     name: "Avinash Nahar",
     position: "Senior Consultant Gen Ai Data scientist",
     company: "Stealth",
   },
   {
-    image: "https://thispersondoesnotexist.com/",
+    image: "/judges/shubham_agarwal_ai.png",
 
     name: "Shubham Agarwal",
     position: "Building Generative AI in Google Cloud.",
     company: "Google",
   },
   {
-    image: "https://thispersondoesnotexist.com/",
+    image: "/judges/umaima_suri_ai.jpg",
 
     name: "Umaima Tinwala",
     position: "Senior Specialist - Generative AI",
     company: "L&T Technology Services",
   },
   {
-    image: "https://thispersondoesnotexist.com/",
+    image: "/judges/saloni_vijay_ai.png",
 
     name: "Saloni Vijay",
     position: "Vice President",

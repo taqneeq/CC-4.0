@@ -20,7 +20,7 @@ const ProblemStatementPage: React.FC = () => {
       <div className="fixed inset-0 z-0">
         <Image src={Space} alt="space" fill className="opacity-20" />
       </div>
-      <div className="max-w-7xl w-full mx-auto border border-purple-500/20 p-6 rounded-lg shadow-lg bg-[#4D4D4D] backdrop-filter backdrop-blur-sm bg-opacity-10 relative z-10 ">
+      <div className="max-w-7xl w-full mx-auto border border-purple-500/20 p-4 md:p-6 rounded-lg shadow-lg bg-[#4D4D4D] backdrop-filter backdrop-blur-sm bg-opacity-10 relative z-10 ">
         <h1 className="text-white text-center text-5xl md:text-8xl font-retro font-bold mb-8 drop-shadow-[5px_5px_0_rgba(192,132,252,1)]">
           Problem Statements
         </h1>
@@ -62,7 +62,7 @@ const ProblemStatementPage: React.FC = () => {
           )}
         </div>
 
-        <div className=" p-4 border border-purple-500/20 rounded bg-gray-700 backdrop-filter backdrop-blur-sm bg-opacity-10 md:text-2xl">
+        <div className=" md:p-4 md:border border-purple-500/20 rounded md:bg-gray-700 md:backdrop-filter md:backdrop-blur-sm md:bg-opacity-10 md:text-2xl">
           {selectedRound === "elementary" && (
             <div>
               <p className="my-5 text-purple-100 md:text-justify">

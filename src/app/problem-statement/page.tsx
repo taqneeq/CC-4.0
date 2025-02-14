@@ -43,7 +43,7 @@ const ProblemStatementPage: React.FC = () => {
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
-              className="absolute left-0 w-full mt-2 bg-[#4D4D4D]  border border-purple-500 rounded shadow-lg z-10 backdrop-filter backdrop-blur-sm bg-opacity-10"
+              className="absolute left-0 w-full mt-2 bg-[#4D4D4D]  border border-purple-500/60 rounded shadow-lg z-10 backdrop-filter backdrop-blur-sm bg-opacity-10"
             >
               <div
                 onClick={() => handleRoundSelect("elementary")}
@@ -51,6 +51,7 @@ const ProblemStatementPage: React.FC = () => {
               >
                 Elementary Round
               </div>
+              <div className="border-t border-purple-500/20"></div>
               <div
                 onClick={() => handleRoundSelect("advanced")}
                 className="p-2 hover:bg-purple-600 cursor-pointer"
@@ -82,16 +83,16 @@ const ProblemStatementPage: React.FC = () => {
           {selectedRound === "advanced" && (
             <div>
               <p className="my-5 text-purple-100 md:text-justify">
-                Naitik is the founder of a small EdTech startup in Mumbai called Neurotechh.
-                Coming from an underprivileged background, he vividly remembers
-                the challenges students in his community faced due to a lack of
-                personalized learning resources and guidance. These gaps in
-                education led to students struggling with concepts and falling
-                behind. He approached NovaAI to help him integrate Generative AI
-                into his platform. Develop a solution that leverages a
-                GenAI-powered tutor to provide personalized learning assistance,
-                generate adaptive study materials, and enhance the overall
-                educational experience for students.
+                Naitik is the founder of a small EdTech startup in Mumbai called
+                Neurotechh. Coming from an underprivileged background, he
+                vividly remembers the challenges students in his community faced
+                due to a lack of personalized learning resources and guidance.
+                These gaps in education led to students struggling with concepts
+                and falling behind. He approached NovaAI to help him integrate
+                Generative AI into his platform. Develop a solution that
+                leverages a GenAI-powered tutor to provide personalized learning
+                assistance, generate adaptive study materials, and enhance the
+                overall educational experience for students.
               </p>
             </div>
           )}

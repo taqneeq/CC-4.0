@@ -64,32 +64,34 @@ const ProblemStatementPage: React.FC = () => {
         <div className=" p-4 border border-purple-500/20 rounded bg-gray-700 backdrop-filter backdrop-blur-sm bg-opacity-10 text-lg md:text-2xl">
           {selectedRound === "elementary" && (
             <div>
-              <p className="my-5 text-purple-100 text-justify">
-                Monica, a Software Developer at Fetch.ai is experiencing
-                difficulties booking an appointment with her doctor and
-                accessing her medical records online, she realizes that the user
-                interface of the healthcare portal is confusing and not
-                user-friendly. Develop a solution that enhances the patient
-                experience and enables them to efficiently manage their
-                healthcare information by building a portal with secure,
-                centralized records managed by patients and accessible to
-                doctors.
+              <p className="my-5 text-purple-100 md:text-justify">
+                Mysha, an EdTech Product Manager at Learnify, is struggling to
+                track her professional development courses and access her
+                learning progress across multiple platforms. She realizes that
+                the current EdTech portals lack a user-friendly interface and
+                seamless integration, making it difficult for educators and
+                students to manage their learning journey effectively. Develop a
+                solution that enhances the user experience by creating a
+                centralized learning management portal where students and
+                educators can securely track progress, access course materials,
+                and manage certifications with ease.
               </p>
             </div>
           )}
 
           {selectedRound === "advanced" && (
             <div>
-              <p className="my-5 text-purple-100 text-justify">
-                Aryan is the owner of a family-owned grocery store located in
-                Mumbai. He grew up in an underprivileged background, and he
-                remembers vividly the struggles that his family store faced due
-                to poor inventory management and untimely food orders. These
-                issues led to a decline in business, and ultimately, poverty. He
-                approached fetch.ai to help him out with his grocery store
-                issues. Develop a solution that utilizes the UI Agent of
-                fetch.ai and create a deep learning model to help save his
-                business.
+              <p className="my-5 text-purple-100 md:text-justify">
+                Naitik is the founder of a small EdTech startup in Mumbai called Neurotechh.
+                Coming from an underprivileged background, he vividly remembers
+                the challenges students in his community faced due to a lack of
+                personalized learning resources and guidance. These gaps in
+                education led to students struggling with concepts and falling
+                behind. He approached NovaAI to help him integrate Generative AI
+                into his platform. Develop a solution that leverages a
+                GenAI-powered tutor to provide personalized learning assistance,
+                generate adaptive study materials, and enhance the overall
+                educational experience for students.
               </p>
             </div>
           )}

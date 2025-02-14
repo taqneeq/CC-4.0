@@ -24,20 +24,20 @@ const uiUxJudges: Judge[] = [
     company: "Assembly Global",
   },
   {
-    image: "https://thispersondoesnotexist.com/",
+    image: "/judges/saloni_pal_uiux.png",
 
     name: "Saloni Pal",
     position: "UX Designer",
     company: "Tata Consultancy Services",
   },
   {
-    image: "https://thispersondoesnotexist.com/",
+    image: "/judges/soham_sinha_uiux.jpeg",
     name: "Soham Sinha",
     position: "LEAD UX",
     company: "UST (TATA MOTORS)",
   },
   {
-    image: "https://thispersondoesnotexist.com/",
+    image: "/judges/vanshita_uiux.jpg",
     name: "Vanshita Singh",
     position: "UX Designer",
     company: "Cervello",
@@ -69,7 +69,7 @@ const uiUxJudges: Judge[] = [
     company: "INUPGRO",
   },
   {
-    image: "https://thispersondoesnotexist.com/",
+    image: "/judges/shivani_uiux.png",
     name: "Shivani Verma",
     position: "Product Designer",
     company: "YouMeWho",
@@ -82,7 +82,7 @@ const uiUxJudges: Judge[] = [
     company: "Silicon Labs",
   },
   {
-    image: "https://thispersondoesnotexist.com/",
+    image: "/judges/rakesh_gosalia_uiux.png",
 
     name: "Rakesh Gosalia",
     position: "UI Design & Front End Coding",
@@ -95,7 +95,7 @@ const uiUxJudges: Judge[] = [
     company: "Neokred",
   },
   {
-    image: "https://thispersondoesnotexist.com/",
+    image: "/judges/rishi_pramanik_uiux.jpg",
     name: "Rishi Pramanik",
     position: "UI Developer",
     company: "Flipkart",
@@ -108,21 +108,21 @@ const uiUxJudges: Judge[] = [
     company: "Accenture",
   },
   {
-    image: "https://thispersondoesnotexist.com/",
+    image: "/judges/taha_uiux.png",
 
     name: "Taha Bhalejwala",
     position: "Design Lead",
     company: "Craft My Brand",
   },
   {
-    image: "https://thispersondoesnotexist.com/",
+    image: "/judges/sooraj_nair_uiux.jpg",
 
     name: "Sooraj Nair",
     position: "Lead Product Designer",
     company: "FoodReady",
   },
   {
-    image: "https://thispersondoesnotexist.com/",
+    image: "/judges/sailesh_uiux.jpg",
 
     name: "Sailesh Chatterjee",
     position: "UX Team Lead",

@@ -111,20 +111,19 @@ export default function Hero() {
       >
         NMIMS&apos;s Official Hackathon!
       </h2>
-<button
-  className="bg-brandRed flex items-center gap-2 font-retro p-2 m-6 mt-4 text-lg rounded-sm hover:bg-brandRed/60"
-  style={{
-    opacity: isInView ? 1 : 0,
-    transform: isInView ? "translateY(0)" : "translateY(50px)",
-    transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1)",
-    transitionDelay: "0.7s",
-  }}
-  onClick={() => window.open('https://unstop.com/o/2H9dk4V?lb=lGQbtRWy', '_blank')}
->
-  Register Now!
-  <Image src={"unstop-logo.svg"} height={50} width={50} alt="unstop logo"></Image>
-</button>
-
+    <button
+      className="bg-brandRed flex items-center gap-2 font-retro p-2 m-6 mt-4 text-lg rounded-sm hover:bg-brandRed/60"
+      style={{
+        opacity: isInView ? 1 : 0,
+        transform: isInView ? "translateY(0)" : "translateY(50px)",
+        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1)",
+        transitionDelay: "0.7s",
+      }}
+      onClick={() => window.open('https://unstop.com/o/2H9dk4V?lb=lGQbtRWy', '_blank')}
+    >
+      Register Now!
+      <Image src={"unstop-logo.svg"} height={50} width={50} alt="unstop logo"></Image>
+    </button>
     </section>
   );
 }

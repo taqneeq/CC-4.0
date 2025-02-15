@@ -64,35 +64,137 @@ const ProblemStatementPage: React.FC = () => {
 
         <div className=" md:p-4 md:border border-purple-500/20 rounded md:bg-gray-700 md:backdrop-filter md:backdrop-blur-sm md:bg-opacity-10 md:text-2xl">
           {selectedRound === "elementary" && (
-            <div>
-              <p className="my-5 text-purple-100 md:text-justify">
-                Mysha, an EdTech Product Manager at Learnify, is struggling to
-                track her professional development courses and access her
-                learning progress across multiple platforms. She realizes that
-                the current EdTech portals lack a user-friendly interface and
-                seamless integration, making it difficult for educators and
-                students to manage their learning journey effectively. Develop a
-                solution that enhances the user experience by creating a
-                centralized learning management portal where students and
-                educators can securely track progress, access course materials,
-                and manage certifications with ease.
+            <div className="mx-auto p-8  text-gray-200 rounded-lg shadow-lg">
+              <p className="mt-4">
+                Meet Chris, a 19-year-old student with ADHD, who has a love for
+                learning but struggles to thrive in traditional education
+                systems. On some days, the lessons move too quickly, leaving him
+                lost, while on others, the lack of engagement makes it hard to
+                stay focused. He has tried online learning platforms, but their
+                rigid interfaces, one-size-fits-all pacing, and overwhelming
+                content only add to his frustration. Like Chris, millions of
+                neurodivergent students face similar challenges, feeling
+                unsupported and disconnected in environments that aren’t
+                designed with their unique needs in mind.
+              </p>
+
+              <h2 className="text-2xl font-semibold text-purple-400 mt-6">
+                Challenge
+              </h2>
+              <p className="mt-2">
+                Design an innovative solution that redefines how neurodivergent
+                students like Chris experience learning. The focus is on
+                crafting an intuitive and empowering user interface and
+                experience (UI/UX) that embraces personalization and
+                inclusivity.
+              </p>
+
+              <h3 className="text-xl font-semibold text-purple-400 mt-6">
+                Consider Challenges Like:
+              </h3>
+              <ul className="mt-2 list-disc list-inside space-y-2">
+                <li>
+                  Adaptive pacing, content delivery, or engagement strategies
+                </li>
+                <li>
+                  Gamification, visual cues, or calming features to enhance
+                  focus
+                </li>
+                <li>
+                  Accessibility features that make learning easier and more
+                  comfortable
+                </li>
+                <li>
+                  Tools for teachers or parents to better support neurodivergent
+                  learners
+                </li>
+              </ul>
+
+              <h2 className="text-2xl font-semibold text-purple-400 mt-6">
+                No Limits to Innovation
+              </h2>
+              <p className="mt-2">
+                Your solution can focus on any part of the learning journey,
+                from ideation to implementation, or even the human connections
+                within the learning process.
+              </p>
+
+              <h2 className="text-2xl font-semibold text-purple-400 mt-6">
+                Key Question
+              </h2>
+              <p className="mt-2">
+                How will your design make learning more inclusive, adaptive, and
+                empowering for neurodivergent students?
+              </p>
+              <p className="mt-2">
+                What unique ideas will help Chris and others like him unlock
+                their true potential?
               </p>
             </div>
           )}
 
           {selectedRound === "advanced" && (
-            <div>
-              <p className="my-5 text-purple-100 md:text-justify">
-                Naitik is the founder of a small EdTech startup in Mumbai called
-                Neurotechh. Coming from an underprivileged background, he
-                vividly remembers the challenges students in his community faced
-                due to a lack of personalized learning resources and guidance.
-                These gaps in education led to students struggling with concepts
-                and falling behind. He approached NovaAI to help him integrate
-                Generative AI into his platform. Develop a solution that
-                leverages a GenAI-powered tutor to provide personalized learning
-                assistance, generate adaptive study materials, and enhance the
-                overall educational experience for students.
+            //
+            <div className=" text-gray-200  bg-blur p-8 rounded-lg shadow-lg">
+              <p className="mt-4">
+                Meet Alex, a brilliant software engineer, just quit their job to
+                pursue their entrepreneurial dreams. While Alex has innovative
+                ideas and strong technical skills, they find themselves
+                overwhelmed by the complexities of building a startup alone.
+              </p>
+
+              <p className="mt-4">
+                From wondering how to validate their idea to finding the right
+                co-founder to figuring out fundraising—every day brings new
+                challenges and decisions. While there's no shortage of startup
+                advice online, Alex wishes for a smarter way to navigate this
+                complex journey.
+              </p>
+
+              <h2 className="text-2xl font-semibold text-purple-400 mt-6">
+                Challenge
+              </h2>
+              <p className="mt-2">
+                Create an AI-powered solution that helps solo founders like Alex
+                transform their entrepreneurial dreams into reality. Your
+                solution should leverage artificial intelligence to support
+                founders in ways you think would be most impactful for their
+                journey.
+              </p>
+
+              <h3 className="text-xl font-semibold text-purple-400 mt-6">
+                Consider Challenges Like:
+              </h3>
+              <ul className="mt-2 list-disc list-inside space-y-2">
+                <li>Validation of their business ideas</li>
+                <li>
+                  Provision of strategic advice on company building and growth
+                </li>
+                <li>Biggest challenges solo founders face</li>
+                <li>Fundraising preparation and investor connections</li>
+                <li>And more</li>
+              </ul>
+
+              <h2 className="text-2xl font-semibold text-purple-400 mt-6">
+                Key Question
+              </h2>
+              <p className="mt-2">
+                How can AI make the entrepreneurial journey less daunting?
+              </p>
+              <p className="mt-2">
+                What unique perspectives or approaches could make your solution
+                stand out? Feel free to focus on any aspect of the startup
+                journey that resonates with your team—from ideation to scaling,
+                from technical challenges to human aspects.
+              </p>
+
+              <h2 className="text-2xl font-semibold text-purple-400 mt-6">
+                Our Goal
+              </h2>
+              <p className="mt-2">
+                We're looking for the most efficient and helpful solution to
+                empower the next generation of founders and entrepreneurs using
+                AI.
               </p>
             </div>
           )}

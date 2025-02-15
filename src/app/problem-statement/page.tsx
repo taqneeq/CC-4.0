@@ -64,7 +64,7 @@ const ProblemStatementPage: React.FC = () => {
 
         <div className=" md:p-4 md:border border-purple-500/20 rounded md:bg-gray-700 md:backdrop-filter md:backdrop-blur-sm md:bg-opacity-10 md:text-2xl">
           {selectedRound === "elementary" && (
-            <div className="mx-auto p-8  text-gray-200 rounded-lg shadow-lg">
+            <div className="mx-auto p-2 md:p-8  text-gray-200 rounded-lg shadow-lg">
               <p className="mt-4">
                 Meet Chris, a 19-year-old student with ADHD, who has a love for
                 learning but struggles to thrive in traditional education
@@ -135,7 +135,7 @@ const ProblemStatementPage: React.FC = () => {
 
           {selectedRound === "advanced" && (
             //
-            <div className=" text-gray-200  bg-blur p-8 rounded-lg shadow-lg">
+            <div className=" text-gray-200 p-2 bg-blur md:p-8 rounded-lg shadow-lg">
               <p className="mt-4">
                 Meet Alex, a brilliant software engineer, just quit their job to
                 pursue their entrepreneurial dreams. While Alex has innovative

@@ -14,8 +14,8 @@ const uiUxJudges: Judge[] = [
   {
     image: "/judges/abhishek_varma_uiux.jpg",
     name: "Abhishek Verma",
-    position: "Vice President",
-    company: "Info Edge India Ltd",
+    position: "UI/UX designer",
+    company: "Sileo Technologies",
   },
   {
     image: "https://thispersondoesnotexist.com/",

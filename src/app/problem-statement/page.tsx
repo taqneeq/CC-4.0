@@ -144,11 +144,11 @@ const ProblemStatementPage: React.FC = () => {
               </p>
 
               <p className="mt-4">
-                From wondering how to validate their idea to finding the right
+                {`From wondering how to validate their idea to finding the right
                 co-founder to figuring out fundraising—every day brings new
                 challenges and decisions. While there's no shortage of startup
                 advice online, Alex wishes for a smarter way to navigate this
-                complex journey.
+                complex journey.`}
               </p>
 
               <h2 className="text-2xl font-semibold text-purple-400 mt-6">
@@ -192,9 +192,9 @@ const ProblemStatementPage: React.FC = () => {
                 Our Goal
               </h2>
               <p className="mt-2">
-                We're looking for the most efficient and helpful solution to
+                {`We're looking for the most efficient and helpful solution to
                 empower the next generation of founders and entrepreneurs using
-                AI.
+                AI.`}
               </p>
             </div>
           )}

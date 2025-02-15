@@ -18,12 +18,6 @@ const uiUxJudges: Judge[] = [
     company: "Sileo Technologies",
   },
   {
-    image: "https://thispersondoesnotexist.com/",
-    name: "Shubham Gone",
-    position: "Senior Designer UX/UI",
-    company: "Assembly Global",
-  },
-  {
     image: "/judges/saloni_pal_uiux.png",
 
     name: "Saloni Pal",
@@ -49,12 +43,7 @@ const uiUxJudges: Judge[] = [
     position: "Serial Internet Entreprenuer",
     company: "IMBUZI",
   },
-  {
-    image: "https://thispersondoesnotexist.com/",
-    name: "Saumitra Vaidya",
-    position: "Founder",
-    company: "Seven11designs",
-  },
+
   {
     image: "/judges/Prashanth_Mariappan_uiux.jpg",
 
@@ -62,12 +51,7 @@ const uiUxJudges: Judge[] = [
     position: "Lead UI/UX Designer",
     company: "Tata Consultancy Services",
   },
-  {
-    image: "https://thispersondoesnotexist.com/",
-    name: "Sonu Jangid",
-    position: "UX/UI Designer",
-    company: "INUPGRO",
-  },
+
   {
     image: "/judges/shivani_uiux.png",
     name: "Shivani Verma",

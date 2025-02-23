@@ -9,7 +9,6 @@ export default function Home() {
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
         />
-        <meta name="fast2sms" content="xxRzuZ38NlLbpRHUDSgzEHh3Pyko5qti" />
 
         <script async src="https://tally.so/widgets/embed.js"></script>
       </Head>

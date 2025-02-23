@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { IBM_Plex_Mono } from "next/font/google";
+import Head from "next/head";
 
 const ibm = IBM_Plex_Mono({
   subsets: ["latin"],
@@ -37,6 +38,9 @@ export default function RootLayout({
       <body
         className={`${retroTech.variable} ${ibm.variable} ${lcd.variable} antialiased w-full min-h-screen relative`}
       >
+        <Head>
+          <meta name="fast2sms" content="xxRzuZ38NlLbpRHUDSgzEHh3Pyko5qti" />
+        </Head>
         <main className="relative z-10 w-full">{children}</main>
       </body>
     </html>

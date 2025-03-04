@@ -12,7 +12,7 @@ export default function Home() {
         <script async src="https://tally.so/widgets/embed.js"></script>
       </Head>
       <iframe
-        src="https://tally.so/r/nGq2Wz"
+        src="https://tally.so/r/mKkQ7z"
         className="absolute inset-0 w-full h-full border-0"
         title="Cyber Cypher 4.0 Elementary Submissions"
       ></iframe>

@@ -2,8 +2,8 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import Space from "../space.jpg";
 import { motion } from "framer-motion";
+import Space from "./space.jpg";
 import { ChevronDown } from "lucide-react";
 
 const ProblemStatementPage: React.FC = () => {

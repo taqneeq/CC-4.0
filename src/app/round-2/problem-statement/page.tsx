@@ -175,29 +175,7 @@ const ProblemStatementPage: React.FC = () => {
                   </li>
                 </ul>
               </p>
-              <h2 className="text-2xl font-semibold text-purple-400 mt-6">
-                Explore the ways to help agents:
-              </h2>
-              <p className="mt-4">
-                <ul>
-                  <li>
-                    How can the platform feel welcoming and easy to use for
-                    different types of users?{" "}
-                  </li>{" "}
-                  <li>
-                    What kind of experience would keep mentors and mentees
-                    engaged over time?
-                  </li>
-                  <li>
-                    How can AI enhance but not overpower the human connection in
-                    mentorship?
-                  </li>{" "}
-                  <li>
-                    Could gamification, community features, or smart nudges make
-                    mentorship more interactive?
-                  </li>
-                </ul>
-              </p>
+
               <h2 className="text-2xl font-semibold text-purple-400 mt-6">
                 Your Oppurtinity to Innovate{" "}
               </h2>
